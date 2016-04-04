@@ -27,6 +27,7 @@
     <![endif]-->
     <script src="<?php echo get_template_directory_uri(); ?>/libs/jquery/jquery-1.11.2.min.js"></script>  
     <script src="<?php echo get_template_directory_uri(); ?>/libs/owl/owl.carousel.min.js" />  </script>   
+    <script src="<?php echo get_template_directory_uri(); ?>/libs/magnific/jquery.magnific-popup.min.js" />  </script>   
     <script src="<?php echo get_template_directory_uri(); ?>/libs/modernizr/modernizr.js"></script> 
     <script src="<?php echo get_template_directory_uri(); ?>/libs/jquery.fitvids.js"></script>   
     <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>

@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<section id="main-slider">
+<div class="main">
+
+<section id="main-slider" class="panel">
     <div id="slider-top" class="owl-carousel owl-theme">
                   
         <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'cat'=>'8') );
@@ -18,7 +20,7 @@
 
 </section>
 
-<section id="about-us">
+<section id="about-us" class="panel">
 	<div class="vertical-middle-wrap">
 		<div class="container">
 			<div class="col-left">
@@ -32,7 +34,7 @@
 				<?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'cat'=>'9') );
 					if ( have_posts() ) : 
         	        while (have_posts()) : the_post(); ?>
-			      		<?php the_content(); ?> </div>
+			      		<?php the_content(); ?> 
 			      	<?php endwhile; 
 			      	endif; 
 		      	wp_reset_query(); ?>
@@ -41,7 +43,7 @@
 	</div>
 </section>
 
-<section id="impulse" class="brand">
+<section id="impulse" class="brand panel">
 	<div class="logo-wrap">
 		<?php if($imgcat1=get_field("imgcat1",get_category(10))){?>
                     <img src="<?php echo $imgcat1;?>"/>
@@ -68,7 +70,7 @@
 	</ul>
 </section> 
 
-<section id="eik" class="brand">
+<section id="eik" class="brand panel">
 	<div class="logo-wrap">
 		<?php if($imgcat1=get_field("imgcat1",get_category(14))){?>
                     <img src="<?php echo $imgcat1;?>"/>
@@ -95,7 +97,7 @@
 	</ul>
 </section>
 
-<section id="our-customers">
+<section id="our-customers" class="panel">
 	<div class="vertical-middle-wrap">
 		<div class="container">
 			<div class="title">
@@ -106,7 +108,7 @@
 				<?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'cat'=>'18') );
 					if ( have_posts() ) : 
         	        while (have_posts()) : the_post(); ?>
-			      		<?php the_content(); ?> </div>
+			      		<?php the_content(); ?> 
 			      	<?php endwhile; 
 			      	endif; 
 		      	wp_reset_query(); ?>
@@ -115,14 +117,29 @@
 	</div>
 </section>
 
-<section id="map-wrap">
+<div id="contacts" class="panel">
+<section id="map-wrap" class="panel">
 	<?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'cat'=>'27') );
 		if ( have_posts() ) : 
         while (have_posts()) : the_post(); ?>
-      		<?php the_content(); ?> </div>
+      		<?php the_content(); ?> 
       	<?php endwhile; 
       	endif; 
   	wp_reset_query(); ?>
+  	
 </section>
 
 <?php get_footer(); ?>
+<script>
+	$(document).ready(function() {
+		$.scrollify({
+		     section:".panel",
+		     scrollSpeed: 1500,
+		 });
+	})
+</script>
+</div>
+
+
+</div>
+
