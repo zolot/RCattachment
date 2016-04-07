@@ -11,7 +11,7 @@ body
 	position: relative
 	padding: 0
 	margin: 0
-	min-width: 992px
+	min-width: 1030px
 	min-height: 100vh
 
 img 
@@ -25,8 +25,9 @@ input, button
 	-webkit-appearance: none;
 
 .container
-	width: 992px
+	width: 1030px
 	padding: 0 25px
+	box-sizing: border-box
 	margin: 0 auto	
 
 ul, li
@@ -47,6 +48,8 @@ header
 	position: fixed
 	background: rgba(255,255,255,1)
 	width: 100%;
+	top: 0
+	left: 0
 	&.default
 		.header-insert
 			padding: 25px 0
@@ -113,7 +116,7 @@ header
 
 #slider-top
 	width: 100%
-	padding-top: 108px
+	padding-top: 105px
 	.item
 		background-size: cover
 		background-position: center
@@ -173,7 +176,8 @@ header
 
 
 .brand
-	min-height: 100vh
+	height: 100vh
+	min-height: 450px
 	padding: 85px 0 35px
 	box-sizing: border-box
 	position: relative
@@ -281,6 +285,8 @@ header
 #map-wrap
 	position: relative
 	height: auto !important
+	iframe
+		height: 50vh
 	p 
 		margin: 0
 	&:before
@@ -292,7 +298,7 @@ header
 		border: 35px solid transparent;	
 		border-top: 35px solid rgba(255,255,255,0.6);
 .info
-	padding: 198px 0 200px
+	padding: 198px 0 270px
 	.characteristics-table-wrap
 		font-size: 13px
 		position: relative
@@ -586,7 +592,6 @@ aside
 					width: 170px
 				&:nth-child(1)
 					color: $blue-color
-					width: 50px 
 					box-sizing: border-box
 	table.reach
 		font-size: 10px
@@ -600,7 +605,6 @@ aside
 			td 
 				width: 6%
 				&:first-child
-					width: 15%
 					min-width: 105px
 					color: #000
 			td 

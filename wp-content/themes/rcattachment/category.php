@@ -42,7 +42,7 @@
             </ul>
             
             <div class="characteristics-table-wrap">
-                <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(28, get_query_var('cat'))) ); 
+                <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(28, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -106,7 +106,7 @@
                      
 
 
-                <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(29, get_query_var('cat'))) ); 
+                <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(29, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -162,7 +162,7 @@
                      <?php endif; wp_reset_query(); ?>
                      
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(30, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(30, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -215,7 +215,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                     <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(31, get_query_var('cat'))) ); 
+                     <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(31, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -273,7 +273,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(32, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(32, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -331,7 +331,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(33, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(33, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -385,7 +385,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(34, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(34, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -439,7 +439,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(35, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(35, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -493,7 +493,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(36, get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(36, get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -551,7 +551,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(39,get_query_var('cat'))) ); 
+                    <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(39,get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">
@@ -610,7 +610,7 @@
                      </div> 
                      <?php endif; wp_reset_query(); ?>
 
-                     <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC',  'category__and' => array(40,get_query_var('cat'))) ); 
+                     <?php query_posts( array ( 'orderby' => 'date ', 'order' => 'ASC', 'category__not_in' => '42',    'category__and' => array(40,get_query_var('cat'))) ); 
                     if ( have_posts() ) : ?>
                     <div class="table">
                         <div class="table-row">

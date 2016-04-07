@@ -1,7 +1,7 @@
 function wResize() {
     var header_height = 108;
     var window_height = $(window).height();
-    $('.item').css('height', window_height-header_height);
+    $('.item').css('height', window_height-header_height+3);
 
     $('.title').each(function() {
         var title = $(this).find("h2");
@@ -161,7 +161,7 @@ $(document).ready(function() {
     $(window).load(function(){
         $("#menu a").mPageScroll2id({
           scrollSpeed: 700,
-          scrollingEasing: 'easeOutQuad'
+          scrollingEasing: 'easeOutExpo'
         });
     });
 })(jQuery);

@@ -6,7 +6,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
-  min-width: 992px;
+  min-width: 1030px;
   min-height: 100vh;
 }
 
@@ -24,8 +24,9 @@ input, button {
 }
 
 .container {
-  width: 992px;
+  width: 1030px;
   padding: 0 25px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -50,6 +51,8 @@ header {
   position: fixed;
   background: white;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 header.default .header-insert {
@@ -146,7 +149,7 @@ header .logo {
 
 #slider-top {
   width: 100%;
-  padding-top: 108px;
+  padding-top: 105px;
 }
 
 #slider-top .item {
@@ -229,7 +232,8 @@ header .logo {
 }
 
 .brand {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 450px;
   padding: 85px 0 35px;
   box-sizing: border-box;
   position: relative;
@@ -375,6 +379,10 @@ header .logo {
   height: auto !important;
 }
 
+#map-wrap iframe {
+  height: 50vh;
+}
+
 #map-wrap p {
   margin: 0;
 }
@@ -390,7 +398,7 @@ header .logo {
 }
 
 .info {
-  padding: 198px 0 200px;
+  padding: 198px 0 270px;
 }
 
 .info .characteristics-table-wrap {
@@ -785,7 +793,6 @@ aside {
 
 .detal-descr-eik table.technical tr td:nth-child(1) {
   color: #0056a4;
-  width: 50px;
   box-sizing: border-box;
 }
 
@@ -808,7 +815,6 @@ aside {
 }
 
 .detal-descr-eik table.reach tr td:first-child {
-  width: 15%;
   min-width: 105px;
   color: #000;
 }

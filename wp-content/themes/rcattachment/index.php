@@ -132,10 +132,14 @@
 <?php get_footer(); ?>
 <script>
 	$(document).ready(function() {
-		$.scrollify({
+		var window_width = $(window).width();
+		if (window_width > 1030) {
+    	$.scrollify({
 		     section:".panel",
 		     scrollSpeed: 1500,
-		 });
+		 });  
+    
+	};
 	})
 </script>
 </div>
